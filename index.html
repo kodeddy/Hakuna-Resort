@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="./imgs/title pic 1.jpg">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <!-- <script>
+    const URL = "https://fortune-cookie.p.rapidapi.com/api/1.0/get_fortune_cookie.php";
+
+    async function makeAPICall() {
+        const result = await fetch(URL)
+        result.json().then(data => {
+            console.log(data)
+        })
+    }
+
+    makeAPICall()
+
+
+    </script> -->
+
+    <title>Hakuna Resort</title>
+</head>
+
+<body>
+    <div class="blur"></div>
+
+    <div class="row p-0 w-100 align-items-center">
+        <!-- Nav bar code within the row -->
+        <div class="col E-text fs-3">
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><b>Home</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>About</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Activities</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Reviews</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Gallery</b> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hakuna heading within the row -->
+        <div class="col E-text fs-1 E-text-header">
+            <i>HAKUNA RESORT</i>
+        </div>
+
+        <!-- Social icons within the row -->
+        <div class="col">
+            <div class="row align-items-center">
+                <a href="#" class="col-3 pe-4 pt-3" target="_blank"><i
+                        class="fa-solid bi bi-twitter fa-beat-fade fa-xl icon-black"
+                        style="--fa-animation-duration: 2.5s;"></i>
+                </a>
+                <a href="#" class="col-3 pe-4 pt-3" target="_blank"><i
+                        class="fa-solid bi bi-instagram fa-beat-fade fa-xl icon-black"
+                        style="--fa-animation-duration: 2.0s;"></i>
+                </a>
+                <a href="#" class="col-3 pe-4 pt-3" target="_blank"> <i
+                        class="fa-solid bi bi-youtube fa-beat-fade fa-xl icon-black"
+                        style="--fa-animation-duration: 1.5s;"></i>
+                </a>
+                <!-- Insert a mail-to form for the envelope. -->
+                <a href="#" class="col-3 pe-4 pt-3" target="_blank"> <i
+                        class="fa-solid fa-envelope fa-beat-fade fa-xl icon-black"
+                        style="--fa-animation-duration: 2.7s;"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <py-script>
+        import requests
+
+        url = "https://fortune-cookie.p.rapidapi.com/api/1.0/get_fortune_cookie.php"
+
+        payload = "api_key=2387337ba1e0b0249ba90f55b2ba2521"
+        headers = {
+        "content-type": "application/x-www-form-urlencoded",
+        "X-RapidAPI-Key": "aea61b92c0msh4c141e8311eeedbp163b61jsn135d13684320",
+        "X-RapidAPI-Host": "fortune-cookie.p.rapidapi.com"
+        }
+
+        response = requests.request("POST", url, data=payload, headers=headers)
+
+        print(response.text)
+    </py-script>
+
+
+
+
+
+    <!-- <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/638b12d473.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+</body>
+
+</html>

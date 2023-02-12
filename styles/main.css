@@ -1,0 +1,25 @@
+body  {
+    background-color: #f35e3a;
+}
+
+.blur {
+    filter: blur(90px);
+    box-shadow: 0 0 0 118px rgb(233 236 84);
+    -webkit-filter: blur(90px);
+}
+
+.E-text {
+    font-family: 'Tangerine', serif;
+    /* text-shadow: 4px 4px 4px #aaa; */
+}
+
+.E-text-header {
+    font-family: 'Itim', cursive !important;
+    text-align: center !important;
+    color: #78c44c;
+    text-shadow: 3px 2px black;
+}
+
+.icon-black {
+    color: black;
+}
