@@ -23,3 +23,12 @@ body  {
 .icon-black {
     color: black;
 }
+
+.tiff_head {
+    /* border-top: 2px solid #c0b19a; */
+    font-family: 'Solitreo', cursive;
+}
+
+.row .card {
+    background-color: #878d40 !important;
+}

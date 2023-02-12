@@ -47,10 +47,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><b>Home</b> </a>
+                                <a class="nav-link active" aria-current="page" href="./index.html"><b>Home</b> </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><b>About</b> </a>
+                                <a class="nav-link" href="./pages/about.html"><b>About</b> </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><b>Activities</b> </a>
@@ -96,8 +96,11 @@
             </div>
         </div>
     </div>
+    <hr class="mt-4">
 
-    <py-script>
+
+
+    <!-- <py-script>
         import requests
 
         url = "https://fortune-cookie.p.rapidapi.com/api/1.0/get_fortune_cookie.php"
@@ -112,16 +115,63 @@
         response = requests.request("POST", url, data=payload, headers=headers)
 
         print(response.text)
-    </py-script>
+    </py-script> -->
+
+    <div class="row w-100">
+
+        <div class="card col m-4 text-bg-info" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title tiff_head fs-1">Welcome to Hakuna Resort! <span data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="I'm not beating for you!"><i
+                            class="fa-solid fa-heart fa-beat fa-sm"></i></span> </h5>
+
+                <div class="card-text E-text fs-3">
+                    <b>Welcome to Hakuna Resort! Where our slogan is(as expected): "Hakuna Matata".</b>
+                    <br>
+                    <b>To be honest, we don't care about your life before you arrive<span data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="...Maybe we don't care at all :)">...</span></b>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+
+        <!-- Modal -->
+        <div class="modal fade bg-transparent" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog tiff_head fs-3">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Sike!</h5>
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    </div>
+                    <div class="modal-body">
+                        Yeah, sorry not sorry fam!
+                        <br>
+                        <i class="fs-5">In this situation, your opinion doesn't matter</i>
+                        <i class="fa-solid fa-trash fa-beat"></i>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I accept my useless fate
+                            in this matter.</button>
+                        <a href="https://www.the-useless.website/" target="_self">
+                            <button type="button" class="btn btn-primary">I don't accept, so I shall waste my life
+                                opposing.</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
 
 
-    <!-- <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script> -->
+
     <script src="https://kit.fontawesome.com/638b12d473.js" crossorigin="anonymous"></script>
     <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <!-- <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
 
 </body>
 
