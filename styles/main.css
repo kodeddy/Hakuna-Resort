@@ -32,3 +32,8 @@ body  {
 .row .card {
     background-color: #878d40 !important;
 }
+
+.no-blue {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
